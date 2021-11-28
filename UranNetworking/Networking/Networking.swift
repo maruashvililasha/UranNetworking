@@ -21,11 +21,6 @@ class Networking<Model> : NSObject, URLSessionTaskDelegate where Model:Codable {
     
     public override init() {
         self.subscribers = Set<AnyCancellable>()
-        print("==Init== Networking, with type: ", Model.self)
-    }
-    
-    deinit {
-        print("==Deinit== Networking, with type: ", Model.self)
     }
     
     func sendRequest(path: String, requestMethod: RequestMethod, params: [URLQueryItem], error: @escaping(ErrorClosure), response: @escaping(ResponseClosure)) {
@@ -51,7 +46,6 @@ class Networking<Model> : NSObject, URLSessionTaskDelegate where Model:Codable {
             .dataTaskPublisher(for: request)
             .receive(on: DispatchQueue.main)
             .tryMap { data, _ in
-//                print("JSON String: \(String(data: data, encoding: .utf8))")
                 return try JSONDecoder().decode(Model.self, from: data)
             }.sink { completions in
                 if case .failure(let err) = completions {

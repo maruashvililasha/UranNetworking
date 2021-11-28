@@ -58,12 +58,12 @@ class DataRepository : DataRepoInterface {
         params.append(URLQueryItem(name: "per_page", value: "\(countPerPage)"))
         params.append(URLQueryItem(name: "query", value: query))
         
-        let networking = Networking<[UGImage]>.shared
+        let networking = Networking<GetSearchImagesResponse>.shared
         networking.sendRequest(path: path, requestMethod: .get, params: params) { [weak self] error in
             completion(.failure(error))
             self?.requests.remove(networking)
         } response: { [weak self] response in
-            completion(.success(response))
+            completion(.success(response.results))
             self?.requests.remove(networking)
         }
         self.requests.insert(networking)

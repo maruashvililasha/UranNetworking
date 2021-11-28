@@ -11,12 +11,13 @@
 		4C5E878827513F3D001F6658 /* RequestMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E878727513F3D001F6658 /* RequestMethods.swift */; };
 		4C5E878B27513F98001F6658 /* UGError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E878A27513F98001F6658 /* UGError.swift */; };
 		4C5E878E27513FF8001F6658 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E878D27513FF8001F6658 /* Network.swift */; };
-		4C5E8792275147AC001F6658 /* ImageMoodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E8791275147AC001F6658 /* ImageMoodel.swift */; };
+		4C5E8792275147AC001F6658 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E8791275147AC001F6658 /* ImageModel.swift */; };
 		4CE6F6F027503659006817C6 /* UranNetworking.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4CE6F6EF27503659006817C6 /* UranNetworking.docc */; };
 		4CE6F6F627503659006817C6 /* UranNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE6F6EB27503659006817C6 /* UranNetworking.framework */; };
 		4CE6F6FB27503659006817C6 /* UranNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE6F6FA27503659006817C6 /* UranNetworkingTests.swift */; };
 		4CE6F6FC27503659006817C6 /* UranNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CE6F6EE27503659006817C6 /* UranNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CE6F718275036B2006817C6 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE6F717275036B2006817C6 /* Networking.swift */; };
+		4CFAFFD32752FA3A0044472C /* SearchResultResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFAFFD22752FA3A0044472C /* SearchResultResponce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,13 +35,14 @@
 		4C5E878727513F3D001F6658 /* RequestMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethods.swift; sourceTree = "<group>"; };
 		4C5E878A27513F98001F6658 /* UGError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UGError.swift; sourceTree = "<group>"; };
 		4C5E878D27513FF8001F6658 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		4C5E8791275147AC001F6658 /* ImageMoodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMoodel.swift; sourceTree = "<group>"; };
+		4C5E8791275147AC001F6658 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		4CE6F6EB27503659006817C6 /* UranNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UranNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE6F6EE27503659006817C6 /* UranNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UranNetworking.h; sourceTree = "<group>"; };
 		4CE6F6EF27503659006817C6 /* UranNetworking.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UranNetworking.docc; sourceTree = "<group>"; };
 		4CE6F6F527503659006817C6 /* UranNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UranNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE6F6FA27503659006817C6 /* UranNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UranNetworkingTests.swift; sourceTree = "<group>"; };
 		4CE6F717275036B2006817C6 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		4CFAFFD22752FA3A0044472C /* SearchResultResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultResponce.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C5E878627513F2F001F6658 /* Helpers */ = {
+		4C5E878627513F2F001F6658 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				4C5E878727513F3D001F6658 /* RequestMethods.swift */,
@@ -70,13 +72,14 @@
 				4C5E878D27513FF8001F6658 /* Network.swift */,
 				4CE6F717275036B2006817C6 /* Networking.swift */,
 			);
-			path = Helpers;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		4C5E878F275146A9001F6658 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4C5E8791275147AC001F6658 /* ImageMoodel.swift */,
+				4C5E8791275147AC001F6658 /* ImageModel.swift */,
+				4CFAFFD22752FA3A0044472C /* SearchResultResponce.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				4C5E878427513EA0001F6658 /* DataRepository.swift */,
-				4C5E878627513F2F001F6658 /* Helpers */,
+				4C5E878627513F2F001F6658 /* Networking */,
 				4C5E878F275146A9001F6658 /* Model */,
 				4CE6F6EE27503659006817C6 /* UranNetworking.h */,
 				4CE6F6EF27503659006817C6 /* UranNetworking.docc */,
@@ -229,9 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5E878827513F3D001F6658 /* RequestMethods.swift in Sources */,
+				4CFAFFD32752FA3A0044472C /* SearchResultResponce.swift in Sources */,
 				4C5E878B27513F98001F6658 /* UGError.swift in Sources */,
 				4C5E878E27513FF8001F6658 /* Network.swift in Sources */,
-				4C5E8792275147AC001F6658 /* ImageMoodel.swift in Sources */,
+				4C5E8792275147AC001F6658 /* ImageModel.swift in Sources */,
 				4C5E878527513EA0001F6658 /* DataRepository.swift in Sources */,
 				4CE6F6F027503659006817C6 /* UranNetworking.docc in Sources */,
 				4CE6F718275036B2006817C6 /* Networking.swift in Sources */,
